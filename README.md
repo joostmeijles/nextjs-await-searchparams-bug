@@ -16,7 +16,8 @@ npm start
 ```
 
 1. Open `http://localhost:3000/api/draft` — enables Draft Mode and redirects to `/`.
-2. Click any item in the list, e.g. "A".
-   - Expected: `Category (via await searchParams): A`
-   - Actual: shows some other item's value  — the wrong content, on the very first click.
+2. Click `Overview`
+2. Click every category in the list, e.g. "A".
+   - Expected: `Category (via await searchParams): <selected category>`
+   - Actual: shows always the same category
 3. Hard-reload the URL: the correct content now renders.
